@@ -1,0 +1,13 @@
+.scroll-container {
+    overflow-y: auto;
+    height: 200px; 
+    position: relative;
+}
+
+.loading-spinner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title={realtedRecordTitle}>
+        <template if:true={records.length}>
+            <template for:each={records} for:item="record">
+                <lightning-card key={record.Id} title={record.Name}>
+                    <div class="slds-p-horizontal_small">
+                        <template for:each={record.fields} for:item="field">
+                            <p key={field.name}>{field.name} : {field.value}</p>
+                        </template>
+                    </div>
+                </lightning-card>
+            </template>
+        </template>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+        <template if:true={error}>
+            <div class="slds-text-color_error">{error}</div>
+        </template>
+    </lightning-card>
+    <div onscroll={handleScroll} class="scroll-container">
+        <!-- Existing content will be placed here -->
+    </div>
+</template>
