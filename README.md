@@ -18,7 +18,6 @@
 By following these steps, you'll successfully add the `RelatedRecordsList` component to your parent object’s Lightning Record Page and configure it to show related records dynamically. 
 ![image](https://github.com/user-attachments/assets/a25b77a7-39af-4f43-99aa-391644bb9152)
 
-
 ## Read All About It
 
 - [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
